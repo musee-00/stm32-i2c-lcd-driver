@@ -48,4 +48,7 @@ void lcd_send_string(const char *str);
 void lcd_set_cursor(uint8_t row, uint8_t col);
 void lcd_clear(void);
 
+#define GPIOA_BASE   0x40020000UL
+#define GPIOA  ((GPIO_TypeDef *) GPIOA_BASE)
+
 #endif
